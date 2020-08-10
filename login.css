@@ -3,6 +3,7 @@ body {
        background-repeat: no-repeat;
        background-attachment: fixed; 
        background-size: cover;
+       background
      }
 
 .header { 
@@ -33,8 +34,8 @@ body {
         float: left;/*Hotel logo*/
       }
 
-form  {  
-        width: 100px;/*For form which contains buttons*/
+ form {  
+        width: 300px;/*For form which contains buttons*/
         margin: auto;
         border-collapse: collapse;
         padding: 60px;
@@ -43,14 +44,26 @@ form  {
         border-color: #052D37;
       }  
 
+label {
+        font-family: Arial;/*Label Texts*/
+        font-size: 25px;
+        font-weight: bold;
+        color: #FFFFFF
+      }
+
+input { 
+        height: 25px;/*Input Box*/
+        font-size: 15px;
+      }
+
 button {
-         background-color: #052D37;/*For sigin and login button*/
+         background-color: #052D37;/*For login button*/
          font-weight: bold;
          color: white;
          border: solid;
          border-color: #052D37;
-         width: 100px;
-         height: 50px;
+         width: 80px;
+         height: 40px;
        } 
 
 button:hover {
@@ -59,9 +72,24 @@ button:hover {
                 color: #052D37;
              }
 
-h1 {
-     font-family: Copperplate Gothic;/*For h1 tag in marquee*/
-   }
+.heading {
+           font-family: Calibri;/*For heading line*/
+           font-size: 40px;
+           font-weight: bold;
+           color: #052D37;
+         }
+
+i { 
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+
+.underlink { color: #FFFFFF;
+             font-size: 18px;
+             font-weight: bold;
+             text-decoration: underline;
+           }
 
 .footer {
           position: fixed;/*For footer*/
