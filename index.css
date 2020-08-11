@@ -24,10 +24,15 @@ body {
           }
 
 .header a:hover {
-                  background-color: #FFFFFF;/*For cursor on top navigation*/ 
+                  background-color: #031614;/*For cursor on top navigation*/ 
                   font-weight: bold;
-                  color: #052D37;
+                  color: #FFFFFF;
                 }
+
+.header a.active {
+	               background-color: #031614;/*For active tab*/
+	               color: #FFFF00;
+                 }
 
 .logo {
         float: left;/*Hotel logo*/

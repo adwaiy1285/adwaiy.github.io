@@ -25,9 +25,9 @@ body {
           }
 
 .header a:hover {
-                  background-color: #FFFFFF;/*For cursor on top navigation*/ 
+                  background-color: #031614;/*For cursor on top navigation*/ 
                   font-weight: bold;
-                  color: #052D37;
+                  color: #FFFFFF;
                 }
 
 .logo {
@@ -84,12 +84,6 @@ i {
     font-weight: bold;
     color: #FFFFFF;
   }
-
-.underlink { color: #FFFFFF;
-             font-size: 18px;
-             font-weight: bold;
-             text-decoration: underline;
-           }
 
 .footer {
           position: fixed;/*For footer*/
