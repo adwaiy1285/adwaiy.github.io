@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paradise Resort - Welcome Page</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico"><!--For icon-->
+	<link rel="stylesheet" type="text/css" href="book.css"><!--CSS link-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--For when width is less-->
+</head>
+<body>
+<div class="header"><!--Top Navigation-->
+	<div class="logo"><!--Logo in Top Navigation-->
+		<img src="images/logo2.jpg" alt="Logo" width="100px" height="50px">
+	</div>
+        <a href="home.html">Home</a><!--Top Navigation Buttons-->
+        <a class="active" onclick="alert('This is the Booking Page');">Book</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="index.html" onclick="return confirm('Are you sure you want to Logout?')">Log out</a>
+</div>
+<br><br>
+
+<div class="intro">
+    <p>Fill out the details below so we can find a right room for you.</p><!--Intro para-->
+</div>
+
+<form>
+	<label for="name">Enter your Name:</label><br><input type="text" placeholder="Name" id="name"><!--Name-->
+	<br><br>
+	<label for="dest">Choose your Destination:</label><br><!--Destination Options-->
+	    <select id="dest" name="dest" size="1">
+	    	<option selected disabled>-Destination-</option>
+	    	<option value="agra">Agra, Uttar Pradesh</option>
+	    	<option value="amritsar">Amritsar, Punjab</option>
+	    	<option value="an">Andaman & Nicobar</option>
+	    	<option value="aurangabad">Aurangabad, Maharashtra</option>
+	    	<option value="bangalore">Bangalore, Karnataka</option>
+	    	<option value="cherrapunji">Cherrapunji, Meghalaya</option>
+	    	<option value="coorg">Coorg, Karnataka</option>
+	    	<option value="darjeeling">Darjeeling, West Bengal</option>
+	    	<option value="gangtok">Gangtok, Sikkim</option>
+	    	<option value="goa">Goa</option>
+	    	<option value="hampi">Hampi, Karnataka</option>
+	    	<option value="hyderabad">Hyderabad, Andhra Pradesh</option>
+	    	<option value="jaipur">Jaipur, Rajasthan</option>
+	    	<option value="jaisalmer">Jaisalmer, Rajasthan</option>
+	    	<option value="kodaikanal">Kodaikanal, Tamil Nadu</option>
+	    	<option value="lakshadweep">Lakshadweep</option>
+	    	<option value="leh">Leh Ladakh, JnK</option>
+	    	<option value="lucknow">Lucknow, Uttar Pradesh</option>
+	    	<option value="mahabaleshwar">Mahabaleshwar, Maharashtra</option>
+	    	<option value="manali">Manali, Himachal Pradesh</option>
+	    	<option value="mathura">Mathura, Uttar Pradesh</option>
+	    	<option value="munnar">Munnar, Kerela</option>
+	    	<option value="mussorie">Mussorie, Uttarakhand</option>
+	    	<option value="nainital">Nainital, Uttarakhand</option>
+	    	<option value="delhi">New Delhi, NCR</option>
+	    	<option value="ooty">Ooty, Tamil Nadu</option>
+	    	<option value="shimla">Shimla, Himachal Pradesh</option>
+	    	<option value="shirdi">Shirdi, Maharashtra</option>
+	    	<option value="srinagar">Srinagar, JnK</option>
+	    	<option value="tirupati">Tirupati, Andhra Pradesh</option>
+	    	<option value="udaipur">Udaipur, Rajasthan</option>
+	    	<option value="varanasi">Varanasi, Uttar Pradesh</option>
+	    </select>
+	    <br><br>
+	<label for="checkin">Check-in Date:</label><br><input type="date" id="checkin"><br><br><!--Label for checkin-->
+    <label for="checkout">Check-out Date:</label><br><input type="date" id="checkout"><br><br><!--Label for checkout-->
+	<label for="type">Type of Hotel:</label><br>
+	    <select id="hotel" name="hotel" size="1"><!--Choose Hotel type-->
+	    	<option selected disabled>-Choose-</option>
+	    	<option value="1200">Motel</option>
+	    	<option value="2400">Resort</option>
+	    	<option value="3600">Suite</option>
+	    	<option value="4800">Villa</option>
+	    </select><br><br>
+	<label for="rooms">Number of Rooms</label><br><input type="number" id="rooms"><br><br><!--Input number of rooms-->
+	<label for="Ac">AC: </label><input type="radio" name="AC" id="AC">
+	<label for="NAc">Non AC: </label><input type="radio" name="AC" id="NAC"><br><br><!--AC or Non AC-->
+
+	<label for="table">Price Structure:</label><br><!--Price Table-->
+	<table>
+		<tr>
+			<th></th>
+			<th>1 Room /Day</th><!--Heading for room per day-->
+			<th>2 Room /Day</th>
+            <th>3 Room /Day</th>
+            <th>4 Room /Day</th>
+		</tr>
+		<tr>
+			<th>Motel</th><!--Motel prices-->
+			<td>₹1200</td>
+			<td>₹2200</td>
+			<td>₹3100</td>
+			<td>₹3900</td>
+		</tr>
+		<tr>
+			<th>Resort</th><!--Resort prices-->
+			<td>₹2400</td>
+			<td>₹4500</td>
+			<td>₹6500</td>
+			<td>₹8400</td>
+		</tr>
+		<tr>
+			<th>Suite</th><!--Suite prices-->
+			<td>₹3600</td>
+			<td>₹6800</td>
+			<td>₹9900</td>
+			<td>₹12900</td>
+		</tr>
+		<tr>
+			<th>Villa</th><!--Villa prices-->
+			<td>₹4800</td>
+			<td>₹9100</td>
+			<td>₹12800</td>
+			<td>₹15800</td>
+		</tr>
+		<tr>
+			<th colspan="5">AC rooms will cost 20% extra</th><!--AC prices-->
+		</tr>
+	</table><br><br>
+
+	<button formaction="pay.html" onclick="return confirm('Rooms are available. Would you like to proceed to payment?')">Check Availability</button><!--Payment button-->
+    <br>
+
+</form>
+<br><br><br><br><br>
+
+<div class="footer"><!--Copyright footer-->
+	<p style="font-size: 15px">©2020 Paradise Resort TM</p>
+</div>
+
+</body>
+</html>
+
+

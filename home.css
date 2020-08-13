@@ -1,5 +1,5 @@
 body {
-       background: url("images/bg1.jpg");/*For wallpaper*/
+       background: url("images/bg3.jpg");/*For wallpaper*/
        background-repeat: no-repeat;
        background-attachment: fixed; 
        background-size: cover;
@@ -38,11 +38,12 @@ body {
         float: left;/*Hotel logo*/
       }
 
-p {
-    font-size: 30px;
-    font-family: Arial;
-    color: #FFFFFF;
-  }
+.intro {
+         font-size: 30px;/*intro text*/
+         font-family: Arial;
+         text-shadow: 2px 2px #000000;
+         color: #FFFFFF;
+       }
 
 form  {  
         width: 100px;/*For form which contains buttons*/

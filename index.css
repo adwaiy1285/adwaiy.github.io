@@ -66,6 +66,7 @@ button:hover {
 
 h1 {
      font-family: Copperplate Gothic;/*For h1 tag in marquee*/
+     text-shadow: 1px 1px #FFFFFF;
    }
 
 .footer {
