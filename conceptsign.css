@@ -1,8 +1,9 @@
 body {
-       background: url("images/bg4.jpg");/*For wallpaper*/
+       background: url("images/bg2.jpg");/*For wallpaper*/
        background-repeat: no-repeat;
        background-attachment: fixed; 
        background-size: cover;
+       background
      }
 
 .header { 
@@ -29,31 +30,29 @@ body {
                   color: #FFFFFF;
                 }
 
-.header a.active {
-	               background-color: #031614;/*For active tab*/
-	               color: #FFFF00;
-                 }
-
 .logo {
         float: left;/*Hotel logo*/
       }
 
-.intro {
-         font-size: 30px;/*intro text*/
-         font-family: Arial;
-         text-shadow: 2px 2px #000000;
-         color: #FFFFFF;
-       }
-
- form {  
-        width: 400px;/*For form*/
+form  {  
+        width: 600px;/*For form which contains buttons*/
         margin: auto;
         border-collapse: collapse;
         padding: 60px;
         border-style: outset;
         border-width: 10px;
-        border-color: #052D37;
+        border-color: #052D37
       }  
+
+.col1 {
+        float: left;/*Column1*/
+        width: 50%
+      }
+
+.col2 {
+        float: left;/*Column2*/
+        width: 50%
+      }
 
 label {
         font-family: Arial;/*For labels*/
@@ -65,32 +64,24 @@ label {
 
 input { 
         height: 25px;/*Input Box*/
+        width: 210px;
         font-size: 15px;
       }
-
-.textbox {
-           height: 100px;
-           font-size: 15px;
-}
-
-input[type=radio] {
-                    width: 20px;/*For Radio Buttons*/
-                    height: 20px;
-                  }
 
 select {
          height: 25px;/*Dropdown list*/
          font-size: 15px;
        }
 
+
 button {
          background-color: #052D37;/*For sigin button*/
-         font-size: 18px;
+         font-weight: bold;
          color: white;
          border: solid;
          border-color: #052D37;
-         width: 120px;
-         height: 60px;
+         width: 80px;
+         height: 40px;
        } 
 
 button:hover {
@@ -99,18 +90,13 @@ button:hover {
                 color: #052D37;
              }
 
-table,th,td {
-              background-color: #000000;/*For table*/
-              border-style: solid;
-              border-collapse: collapse;
-              border-color: #666600;
-            }
-
-th,td {
-        font-size: 20px;/*For rows and colums*/
-        color: #76D300;
-     }
-
+.heading {
+           font-family: Calibri;/*For heading line*/
+           font-size: 40px;
+           font-weight: bold;
+           color: #052D37;
+           text-shadow: 1px 1px #FFFFFF;
+         }
 
 .footer {
           position: fixed;/*For footer*/
@@ -122,7 +108,5 @@ th,td {
           color: white;
           text-align: left;
         }
-
-
 
 

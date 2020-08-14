@@ -1,5 +1,5 @@
 body {
-       background: url("images/bg2.jpg");/*For wallpaper*/
+       background: url("images/bg1.jpg");/*For wallpaper*/
        background-repeat: no-repeat;
        background-attachment: fixed; 
        background-size: cover;
@@ -29,6 +29,12 @@ body {
                   font-weight: bold;
                   color: #FFFFFF;
                 }
+
+.header a.active {
+                 background-color: #031614;/*For active tab*/
+                 color: #FFFF00;
+                 }
+
 
 .logo {
         float: left;/*Hotel logo*/
