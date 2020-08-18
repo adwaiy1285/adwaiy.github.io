@@ -12,9 +12,9 @@
 	<div class="logo"><!--Logo in Top Navigation-->
 		<img src="images/logo2.jpg" alt="Logo" width="100px" height="50px">
 	</div>
-        <a href="javascript:alert('First log in to access Home Page');">Home</a><!--Top Navigation Buttons-->
-        <a href="javascript:alert('First log in to access Booking Page');">Book</a>
-        <a href="contact.html">Contact</a>
+        <a onclick="alert('First log in to access Home Page');">Home</a><!--Top Navigation Buttons-->
+        <a onclick="alert('First log in to access Booking Page');">Book</a>
+        <a href="contactguest.html">Contact</a>
         <a href="about.html">About</a>
 </div>
 <br><br>
@@ -79,25 +79,14 @@
                  <br><br>
         <label for="user">Create Username: </label><br><Input type="text" Placeholder="username" id="user"><!--Label and input for username-->
              <br><br>
-        <label for="pass">Create Password: </label><br><Input type="password" Onchange="password()" Placeholder="Password" id="pcode"><!--Label and input for creating pass-->
+        <label for="pass">Create Password: </label><br><Input type="password" Placeholder="Password" id="pcode"><!--Label and input for creating pass-->
              <br><br>
         <label for="pass">Confirm Password: </label><br><Input type="password" Placeholder="Password" id="pcode"><!--Label and input for confirming pass-->
              <br><br>
         <button type="submit" formaction="login.html">SIGN IN</button><!--Signin Button-->
   
+    </form>
 </form>
-
-<script type="text/javascript">
-function password() {
-               
-                var pwd = document.getElementById("pcode").value;
-                if(pwd>10){
-                  alert('Password too short')
-                
-                }
-            }
-</script>
-
 <br><br><br>
 
 <div class="footer"><!--Copyright footer-->
