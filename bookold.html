@@ -65,7 +65,7 @@
 	    </select>
 	    <br><br>
 	<label for="checkin">Check-in Date:</label><br><input type="date" id="checkin"><br><br><!--Label for checkin-->
-    <label for="checkout">No. of days of Stay:</label><br><input type="number" id="stay" min="1"><br><br><!--Label for checkout-->
+    <label for="checkout">Check-out Date:</label><br><input type="date" id="checkout"><br><br><!--Label for checkout-->
 	<label for="type">Type of Hotel:</label><br>
 	    <select id="hotel" name="hotel" size="1"><!--Choose Hotel type-->
 	    	<option selected disabled>-Choose-</option>
@@ -74,8 +74,8 @@
 	    	<option value="3600">Suite</option>
 	    	<option value="4800">Villa</option>
 	    </select><br><br>
-	<label for="rooms">Number of Rooms</label><br><input type="number" id="rooms" min="1"><br><br><!--Input number of rooms-->
-	<label for="Ac">AC: </label><input type="radio" value="1250" name="AC" id="AAC">
+	<label for="rooms">Number of Rooms</label><br><input type="number" id="rooms"><br><br><!--Input number of rooms-->
+	<label for="Ac">AC: </label><input type="radio" name="AC" id="AC">
 	<label for="NAc">Non AC: </label><input type="radio" name="AC" id="NAC"><br><br><!--AC or Non AC-->
 
 	<label for="table">Price Structure:</label><br><!--Price Table-->
@@ -90,37 +90,37 @@
 		<tr>
 			<th>Motel</th><!--Motel prices-->
 			<td>₹1200</td>
-			<td>₹2400</td>
-			<td>₹3600</td>
-			<td>₹4800</td>
+			<td>₹2200</td>
+			<td>₹3100</td>
+			<td>₹3900</td>
 		</tr>
 		<tr>
 			<th>Resort</th><!--Resort prices-->
 			<td>₹2400</td>
-			<td>₹4800</td>
-			<td>₹7200</td>
-			<td>₹9600</td>
+			<td>₹4500</td>
+			<td>₹6500</td>
+			<td>₹8400</td>
 		</tr>
 		<tr>
 			<th>Suite</th><!--Suite prices-->
 			<td>₹3600</td>
-			<td>₹7200</td>
-			<td>₹10800</td>
-			<td>₹14400</td>
+			<td>₹6800</td>
+			<td>₹9900</td>
+			<td>₹12900</td>
 		</tr>
 		<tr>
 			<th>Villa</th><!--Villa prices-->
 			<td>₹4800</td>
-			<td>₹9600</td>
-			<td>₹14400</td>
-			<td>₹19200</td>
+			<td>₹9100</td>
+			<td>₹12800</td>
+			<td>₹15800</td>
 		</tr>
 		<tr>
-			<th colspan="5">AC rooms will cost ₹1250 extra per room</th><!--AC prices-->
+			<th colspan="5">AC rooms will cost 20% extra</th><!--AC prices-->
 		</tr>
 	</table><br><br>
 
-	<button formaction="pay.html" onclick="cost()">Check</button><!--Payment button-->
+	<button formaction="pay.html" onclick="return confirm('Rooms are available. Would you like to proceed to payment?')">Check Availability</button><!--Payment button-->
     <br>
 
 </form>
@@ -129,8 +129,6 @@
 <div class="footer"><!--Copyright footer-->
 	<p style="font-size: 15px">©2020 Paradise Resort TM</p>
 </div>
-
-<script src="book.js"></script>
 
 </body>
 </html>
