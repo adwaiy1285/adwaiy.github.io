@@ -1,38 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Paradise Resort - Welcome Page</title>
-	<link rel="icon" type="image/x-icon" href="images/favicon.ico"><!--For icon-->
-	<link rel="stylesheet" type="text/css" href="index.css"><!--CSS link-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--For when width is less-->
+	<title>drums</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-<div class="header"><!--Top Navigation-->
-	<div class="logo"><!--Logo in Top Navigation-->
-		<img src="images/logo2.jpg" alt="Logo" width="100px" height="50px">
-	</div>
-        <a onclick="alert('First log in to access Home Page');">Home</a><!--Top Navigation Buttons-->
-        <a onclick="alert('First log in to access Booking Page');">Book</a>
-        <a href="contactguest.html">Contact</a>
-        <a href="about.html">About</a>
-        <a href="login.html">Log in</a>
-</div>
-<br><br>
-
-<h1><marquee>WELCOME TO PARADISE RESORT!!!</marquee></h1><br><br><br><br><br><br><!--Marquee-->
-
-<form><!--Form for login and signin-->
-	<button formaction="signup.html">SIGNUP</button>
-	<br><br>
-	<button formaction="login.html">LOGIN</button>
-</form>
-
-
-<div class="footer"><!--Copyright footer-->
-	<p style="font-size: 15px">©2020 Paradise Resort TM</p>
-</div>
-
+	<p class="head">Drum Set</p>
+	<table class="center">
+		<tr>
+			<td rowspan="2"><input type="image" class="ride6" onclick="playAudio('audio/6ride.mp3')" src="image\6ride.jpg"></td>
+			<td colspan="2"><input type="image" class="tom1" onclick="playAudio('audio/1tom.mp3')" src="image\1tom.jpg"></td>
+			<td colspan="2"><input type="image" class="tom2" onclick="playAudio('audio/2tom.mp3')" src="image\2tom.jpg"></td>
+			<td rowspan="2"><input type="image" class="crash7" onclick="playAudio('audio/7crash.mp3')" src="image\7crash.jpg"></td>
+		</tr>
+		<tr>
+			<td><input type="image" class="floor4" onclick="playAudio('audio/4floor.mp3')" src="image\4floor.jpg"></td>
+			<td colspan="2"><input type="image" class="bass3" onclick="playAudio('audio/3bass.mp3')" src="image\3bass.jpg"></td>
+			<td><input type="image" class="snare5" onclick="playAudio('audio/5snare.mp3')" src="image\5snare.jpg"></td>
+		</tr>
+	</table>
+    <script type="text/javascript">
+    	function playAudio(url) {
+    		new Audio(url).play();
+    	}
+    </script>
 </body>
 </html>
-
