@@ -19,10 +19,44 @@
 			<td><input type="image" class="snare5" onclick="playAudio('audio/5snare.mp3')" src="image\5snare.jpg"></td>
 		</tr>
 	</table>
+	<audio id="a1" src="audio/1tom.mp3" controls style="display: none;"></audio>
+	<audio id="a2" src="audio/2tom.mp3" controls style="display: none;"></audio>
+	<audio id="a3" src="audio/3bass.mp3" controls style="display: none;"></audio>
+	<audio id="a4" src="audio/4floor.mp3" controls style="display: none;"></audio>
+	<audio id="a5" src="audio/5snare.mp3" controls style="display: none;"></audio>
+	<audio id="a6" src="audio/6ride.mp3" controls style="display: none;"></audio>
+	<audio id="a7" src="audio/7crash.mp3" controls style="display: none;"></audio>
+
     <script type="text/javascript">
     	function playAudio(url) {
     		new Audio(url).play();
     	}
+    	
+     	document.addEventListener('keydown', function(e) {
+            if (e.keyCode==70) {
+                document.getElementById('a1').play();
+    	    } 
+    	    else if (e.keyCode==74) {
+                document.getElementById('a2').play();
+    	    } 
+    	    else if (e.keyCode==66) {
+                document.getElementById('a3').play();    		
+    	    } 
+    	    else if (e.keyCode==79) {
+                document.getElementById('a4').play();    		
+    	    } 
+    	    else if (e.keyCode==87) {
+                document.getElementById('a5').play();    		
+    	    } 
+    	    else if (e.keyCode==81) {
+                document.getElementById('a6').play();   		
+    	    } 
+    	    else if (e.keyCode==80) {
+                document.getElementById('a7').play();    		
+    	    } 
+        });
+
     </script>
+
 </body>
 </html>
