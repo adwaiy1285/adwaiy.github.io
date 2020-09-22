@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paradise Resort - Home</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico"><!--For icon-->
+	<link rel="stylesheet" type="text/css" href="about.css"><!--CSS link-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--For when width is less-->
+</head>
+<body>
+<div class="header"><!--Top Navigation-->
+	<div class="logo"><!--Logo in Top Navigation-->
+		<img src="images/logo2.jpg" alt="Logo" width="100px" height="50px">
+	</div>
+        <a href="login.html" onclick="return confirm('First Login to continue');">Home</a><!--Top Navigation Buttons-->
+        <a href="login.html" onclick="return confirm('First Login to continue');">Book</a>
+        <a href="contactguest.html">Contact</a>
+        <a class="active" onclick="alert('This is the About us Page');">About</a>
+        <a href="login.html">Log in</a>
+
+</div>
+<br><br>
+
+<div class="intro">
+<p>Paradise Resorts Pvt. Ltd. is India’s largest extreme adventure luxury resort. With over 700 Luxury Resorts, Signature Villas and Lavish Restaurants spread amidst the fascinating land of India, Paradise Resorts welcomes visitors with the finest indulgences it has to offer.</p>
+
+<p>In order to make your vacations memorable, Paradise Resorts provides unique 24 hour services at Paradise Spa, Salon, Swimming Pool, Fitness Centre, Mini Mart, Business Centre with all modern amenities and a fine dining experience at Café 24.</p>
+
+<p>Some of our Prestigiuos outlets are-</p><!--Welcome Para-->
+</div>
+<br><br>
+
+	<div class="container">
+		<img class="slides" src="images/logo3.jpg">
+		<img class="slides" src="sls/goa.jpg">
+		<img class="slides" src="sls/mahabaleshwar.jpg">
+		<img class="slides" src="sls/manali.jpg">
+		<img class="slides" src="sls/rajasthan.jpg">
+		<button class="btn1" id="btn1" onclick="plusSlides(-1)">&#10094;</button>
+		<button class="btn2" id="btn2" onclick="plusSlides(1)">&#10095;</button>
+
+	</div>
+	<br><br><br><br><br>
+
+<div class="footer"><!--Copyright footer-->
+	<p style="font-size: 15px">©2020 Paradise Resort TM</p>
+</div>
+
+<script type="text/javascript">
+
+var index=1;
+showSlides(index);
+function plusSlides(n)
+{
+  showSlides(index+=n);
+}
+
+function showSlides(n)
+{
+  var i;
+  var photos=document.getElementsByClassName("slides");
+  if(n>photos.length) 
+  {
+    index=1;
+  }
+  if(n<1)
+  {
+    index=photos.length;
+  }
+  for (i = 0; i < photos.length; i++) 
+  {
+    photos[i].style.display = "none";
+  }
+  photos[index-1].style.display = "block";
+}
+
+
+</script>
+
+
+</body>
+</html>
+
+
+
